@@ -1,6 +1,14 @@
-function sumArray(a:number,b:number,c:number,d:number,e:number):number{
-    const result:number=a+b+c+d+e;
-    return result;
+{
+    //
+    function sumArray(nums:number[]):number{
+        let result = 0;
+        nums.forEach((n)=>{
+            result += n;
+        })
+        return result;
+    }
+    const nums:number[] =[1,2,3,4,5];
+    const sum=sumArray(nums);
+    console.log(sum);
+    //
 }
-const sum=sumArray(1,2,3,4,5);
-console.log(sum);
